@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9e1d4;
+  color: #4c493d;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.invitacion {
+  width: 100%;
+  max-width: 480px;
+  min-height: 600px;
+  padding: 38px 24px;
+  text-align: center;
+  background: #fffdf7;
+  border: 1px solid #c5a66b;
+  outline: 5px solid #fffdf7;
+  box-shadow: 0 12px 35px #5d4a3020;
+}
+
+.subtitulo {
+  font-size: 10px;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.sobre {
+  margin: 45px auto;
+  padding: 36px 12px;
+  border: 1px solid #c5a66b;
+  background: #f5eee0;
+}
+
+.sobre span {
+  color: #a58a52;
+  font-size: 38px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(40px, 11vw, 60px);
+  font-weight: 400;
+  color: #a58a52;
+}
+
+h1 span {
+  font-size: 30px;
+}
+
+h2 {
+  margin-top: 32px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.mensaje {
+  line-height: 1.9;
+  font-size: 13px;
+}
+
+.fecha {
+  margin: 28px 0;
+  padding: 20px;
+  border-top: 1px solid #c5a66b;
+  border-bottom: 1px solid #c5a66b;
+}
+
+.fecha strong {
+  display: block;
+  font-size: 64px;
+  font-weight: 400;
+  color: #a58a52;
+}
+
+.fecha p {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.boton, button {
+  display: inline-block;
+  margin: 12px 0;
+  padding: 13px 20px;
+  border: 1px solid #a58a52;
+  background: #a58a52;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.whatsapp {
+  background: #536d57;
+  border-color: #536d57;
+}
+
+.oculto {
+  display: none;
+}
+
+#contenido {
+  animation: aparecer 1s ease;
+}
+
+.firma {
+  margin-top: 35px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

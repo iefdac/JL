@@ -1,0 +1,48 @@
+INVITACIÓN WEB DE JOEL Y LUZ — LISTA PARA GITHUB PAGES
+=====================================================
+
+1) Abre index.html en tu navegador para una vista previa.
+2) Sube TODOS los archivos y la carpeta assets/ a la raíz de tu repositorio.
+3) En GitHub > repositorio > Settings > Pages:
+   Build and deployment: Deploy from a branch; Branch: main; Folder: /(root).
+4) Al publicarse, verás el enlace en Settings > Pages.
+5) Comparte ese enlace por WhatsApp.
+
+EDICIÓN FÁCIL
+-------------
+- En script.js, al comienzo, está el objeto CONFIG.
+- whatsappConfirmaciones: número receptor con código de país; por ejemplo para Perú
+  51 seguido de 9 dígitos, sin espacios ni +. Inicialmente está vacío.
+- Foto principal: assets/portada.jpg
+- Galería: assets/foto1.jpg, foto2.jpg, foto3.jpg y foto4.jpg
+- Video: assets/video-demo.mp4
+- Música: assets/musica-original.wav (melodía original instrumental de muestra).
+- Puedes sustituir cualquiera de esos archivos manteniendo el mismo nombre
+  o cambiar la ruta en CONFIG.
+- Para evitar conflictos con derechos de autor, usa música propia o licenciada.
+- Horario interpretado: 3:30 p. m. del 26 de diciembre de 2026, hora peruana.
+- Las cuentas bancarias no fueron proporcionadas y NO se inventaron.
+- Los botones de mapas usan búsqueda de Google Maps; conviene sustituirlos por
+  enlaces a los pines exactos antes de compartir.
+- El audio comienza solo después de tocar 'Abrir invitación' por las restricciones
+  de reproducción automática de los navegadores móviles.
+- Las confirmaciones se mandan por WhatsApp, NO se almacenan en la web.
+- Las fotografías de muestra son ilustrativas y deben sustituirse.
+- La sección de video contiene un clip gráfico de muestra reemplazable.
+- Si quieres vista previa en WhatsApp con tu foto, el metadato og:image requiere
+  una URL absoluta pública, por ejemplo https://USUARIO.github.io/REPO/assets/portada.jpg
+  (modifícala en index.html cuando ya tengas el enlace publicado).
+
+ARCHIVOS
+--------
+index.html          Estructura y textos de la invitación
+styles.css          Colores, tamaños, diseño y animaciones
+script.js           Música, cuenta regresiva, galería, RSVP y enlaces
+assets/portada.jpg  Foto principal (referencial)
+assets/foto*.jpg    Cuatro fotografías referenciales
+assets/fondo-floral.png Fondo floral azul
+assets/video-demo.mp4 Video animado de muestra
+assets/musica-original.wav Música instrumental original de muestra
+
+NOTA: La sección regalos mantiene un sobre y la opción de consulta, sin publicar
+cuentas ni métodos no suministrados. Puedes cambiar el contenido en index.html.

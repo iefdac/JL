@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#122e51" />
+  <meta name="description" content="Joel y Luz celebran su matrimonio. Acompáñanos el 26 de diciembre de 2026." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Joel & Luz · Nuestra boda" />
+  <meta property="og:description" content="26 de diciembre de 2026 · Tenemos el honor de invitarte." />
+  <meta property="og:image" content="assets/portada.jpg" />
+  <title>Joel & Luz | Nuestra boda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="locked">
+  <div class="intro" id="intro" role="dialog" aria-label="Abrir invitación">
+    <div class="intro-glow"></div>
+    <div class="intro-card">
+      <div class="ornament">✦ &nbsp; UNA HISTORIA PARA SIEMPRE &nbsp; ✦</div>
+      <div class="rings" aria-hidden="true">◯◯</div>
+      <p class="intro-kicker">Estás cordialmente invitado a la boda de</p>
+      <h1>Joel <span>&</span> Luz</h1>
+      <div class="hairline"></div>
+      <p class="date-intro">26 · DICIEMBRE · 2026</p>
+      <button class="btn btn-gold" id="openInvite" type="button">✉ &nbsp; Abrir invitación <span aria-hidden="true">→</span></button>
+      <p class="small muted">Una experiencia para disfrutar con sonido ♫</p>
+    </div>
+  </div>
+
+  <button type="button" class="music-control" id="musicToggle" aria-label="Activar música" title="Activar o pausar música">♫ <span id="musicText">Música</span></button>
+  <audio id="bgMusic" loop preload="none" src="assets/musica-original.wav"></audio>
+
+  <main id="content">
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow light">NUESTRA BODA · 26.12.2026</span>
+        <span class="mini-flower">✧</span>
+        <h2>Joel <em>&</em> Luz</h2>
+        <p>El inicio de nuestro para siempre</p>
+        <a class="scroll-down" href="#bienvenida" aria-label="Ver invitación"><span>DESCUBRE NUESTRA HISTORIA</span><span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="section floral center" id="bienvenida">
+      <div class="section-inner narrow reveal">
+        <span class="eyebrow">CON EL CORAZÓN LLENO DE AMOR</span>
+        <div class="flourish">❦</div>
+        <h2 class="script-heading">¡Nos casamos!</h2>
+        <p class="lead">Hay momentos que se convierten en eternos cuando los compartimos con las personas que amamos.</p>
+        <p>Nos haría inmensamente felices contar con tu presencia en el día en que uniremos nuestras vidas.</p>
+        <div class="divider-symbol">✦</div>
+        <h3 class="names-mid">Joel <span>&</span> Luz</h3>
+      </div>
+    </section>
+
+    <section class="section navy-section center" id="familias">
+      <div class="section-inner reveal">
+        <span class="eyebrow light">CON LA BENDICIÓN DE NUESTROS PADRES</span>
+        <h2 class="serif-title ivory">Nuestras familias</h2>
+        <div class="family-grid">
+          <article class="family-card"><h3>Padres del novio</h3><p>Alberto Ortiz Vilca Paria</p><p>Betzabeth Arcaya Vizcacho</p></article>
+          <article class="family-card"><h3>Padres de la novia</h3><p>Armando Adama Romero</p><p>Livia Calizaya Marquina</p></article>
+        </div>
+        <div class="sponsors"><span class="eyebrow light">NUESTROS PADRINOS</span><p>Eduardo Fernández Ticona <span class="gold-text">&</span> Verónica Tenorio Herrera</p></div>
+      </div>
+    </section>
+
+    <section class="section center calendar-section" id="fecha">
+      <div class="section-inner reveal">
+        <span class="eyebrow">RESERVA ESTA FECHA</span>
+        <h2 class="script-heading">Un día inolvidable</h2>
+        <div class="date-panel"><span>DICIEMBRE</span><strong>26</strong><span>SÁBADO · 2026</span></div>
+        <div class="countdown" aria-label="Cuenta regresiva">
+          <div><strong id="days">--</strong><span>DÍAS</span></div><div><strong id="hours">--</strong><span>HORAS</span></div><div><strong id="minutes">--</strong><span>MINUTOS</span></div><div><strong id="seconds">--</strong><span>SEGUNDOS</span></div>
+        </div>
+        <p id="countdownMessage" class="muted">Contando los instantes para verte...</p>
+        <button class="btn btn-outline" id="calendarBtn" type="button">Añadir a mi calendario ↗</button>
+      </div>
+    </section>
+
+    <section class="section blue-tint center" id="lugares">
+      <div class="section-inner reveal">
+        <span class="eyebrow">CEREMONIA Y CELEBRACIÓN</span>
+        <h2 class="serif-title">Dónde nos reuniremos</h2>
+        <div class="places">
+          <article class="place-card"><span class="place-icon">✝</span><h3>Ceremonia religiosa</h3><p class="place-name">Parroquia San José Misericordioso</p><div class="line-small"></div><p><strong>3:30 p. m.</strong></p><p class="muted">26 de diciembre de 2026</p><a class="btn btn-outline" id="churchMap" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a></article>
+          <article class="place-card"><span class="place-icon">✧</span><h3>Recepción</h3><p class="place-name">La Gran Reserva Santa Elena</p><div class="line-small"></div><p>Av. Los Viñedos D-4, Pago Peschay, Pocollay</p><p class="muted">Referencia: frente al Colegio Santa María Eufrasia</p><a class="btn btn-outline" id="receptionMap" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center" id="galeria">
+      <div class="section-inner reveal">
+        <span class="eyebrow">RECUERDOS QUE NOS UNEN</span>
+        <h2 class="script-heading">Nuestra historia en imágenes</h2>
+        <p class="muted">Cada fotografía guarda un momento, cada momento una razón para celebrar.</p>
+        <div class="gallery" id="gallery">
+          <figure class="gallery-item tall"><img data-photo="1" alt="Fotografía romántica de referencia" loading="lazy" /></figure>
+          <figure class="gallery-item"><img data-photo="2" alt="Pareja en un momento especial" loading="lazy" /></figure>
+          <figure class="gallery-item"><img data-photo="3" alt="Detalle romántico de boda" loading="lazy" /></figure>
+          <figure class="gallery-item wide"><img data-photo="4" alt="Fotografía de pareja" loading="lazy" /></figure>
+        </div>
+        <p class="photo-disclaimer">Fotografías ilustrativas de referencia, reemplazables por fotos de los novios.</p>
+      </div>
+    </section>
+
+    <section class="section video-section center" id="video">
+      <div class="section-inner narrow reveal">
+        <span class="eyebrow light">HECHO CON AMOR</span>
+        <h2 class="serif-title ivory">Una historia que continúa...</h2>
+        <div class="video-shell"><video id="ourVideo" controls playsinline preload="metadata" poster="assets/portada.jpg"><source src="assets/video-demo.mp4" type="video/mp4" />Tu navegador no admite videos.</video></div>
+        <p class="video-caption">Video de presentación de referencia: puedes sustituirlo por tu propio video.</p>
+      </div>
+    </section>
+
+    <section class="section floral center" id="regalos">
+      <div class="section-inner narrow reveal">
+        <span class="eyebrow">UN PEQUEÑO DETALLE</span><h2 class="script-heading">El mejor regalo...</h2>
+        <p class="lead">El mejor regalo es que estés presente en este día tan esperado.</p>
+        <p>Si deseas hacernos un obsequio, tenemos estas opciones:</p>
+        <div class="gift-grid"><div class="gift-option"><span>✉</span><strong>Sobre de regalo</strong><small>Podrás entregarlo el día de nuestra boda.</small></div><div class="gift-option"><span>♡</span><strong>Otro detalle</strong><small>Puedes consultarnos por WhatsApp.</small></div></div>
+        <p class="muted fine">No se han incluido cuentas bancarias porque aún no fueron proporcionadas.</p>
+      </div>
+    </section>
+
+    <section class="section navy-section center" id="adultos">
+      <div class="section-inner narrow reveal"><span class="eyebrow light">UNA CELEBRACIÓN ESPECIAL</span><div class="flourish gold-text">✧</div><h2 class="serif-title ivory">Solo adultos</h2><p class="lead ivory">“Queremos que todos disfruten sin preocupaciones, por lo que la celebración será solo para adultos”.</p><p class="soft-white">Agradecemos tu comprensión.</p></div>
+    </section>
+
+    <section class="section center rsvp-section" id="confirmacion">
+      <div class="section-inner narrow reveal"><span class="eyebrow">ESPERAMOS CONTAR CONTIGO</span><h2 class="script-heading">Confirma tu asistencia</h2><p class="lead">“Tu presencia es muy importante para nosotros. Por favor, confírmanos tu asistencia lo antes posible”.</p>
+        <form id="rsvpForm" class="rsvp-form">
+          <label for="guestName">Tu nombre y apellido</label><input id="guestName" name="guestName" required maxlength="100" autocomplete="name" placeholder="Escribe tu nombre" />
+          <label for="attendance">¿Nos acompañarás?</label><select id="attendance" name="attendance" required><option value="">Selecciona una opción</option><option value="Sí, asistiré">Sí, asistiré</option><option value="No podré asistir">No podré asistir</option></select>
+          <label for="note">Mensaje para los novios (opcional)</label><textarea id="note" name="note" rows="3" maxlength="400" placeholder="Un mensaje lleno de cariño..."></textarea>
+          <button class="btn btn-gold" type="submit">Confirmar por WhatsApp ↗</button>
+          <p class="fine muted" id="rsvpHelp">La confirmación se prepara como un mensaje de WhatsApp. Debes configurar el número receptor en script.js.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer center"><div class="footer-rings">◯◯</div><h2>Joel <span>&</span> Luz</h2><p>26 · 12 · 2026</p><p>Gracias por ser parte de nuestro para siempre.</p><button id="shareBtn" class="share-button" type="button">Compartir invitación ↗</button></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
